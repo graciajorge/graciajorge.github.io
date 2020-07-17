@@ -1,3 +1,44 @@
 * {
     font-family: 'Open Sans', sans-serif;
+    --primary-color: #365851;
+    --secondary-color: #1b2021; 
+}
+
+.nav-toolbar {
+    padding: 25px;
+    background-color: var(--primary-color);
+}
+
+.nav-toolbar > nav > a {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.nav-toolbar > nav > a:hover{
+    transition: all .25s ease-in-out;
+    background-color: rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--secondary-color);
+    margin: 0;
+    color: #E0E0E0;
+}
+
+.main-content {
+    padding-top:  20px;
+    margin: 0 auto;
+    max-width: 800px;
+    animation: fadeIn .75s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
